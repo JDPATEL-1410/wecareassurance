@@ -328,3 +328,30 @@ window.WeCareAssurance = {
     validatePhone,
     validateRequired
 };
+// Tab Switching
+const tabs = document.querySelectorAll(".tab-btn");
+const sections = document.querySelectorAll(".insurance-section");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    const target = tab.getAttribute("data-plan");
+    sections.forEach(section => {
+      section.classList.remove("active");
+      if (section.id === target) {
+        section.classList.add("active");
+      }
+    });
+  });
+});
+
+// Mobile Menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
