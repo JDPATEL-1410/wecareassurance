@@ -987,13 +987,12 @@ img {
     gap: 0.5rem;
 }
 
-/* Plans Page Specific */
+/* Plans Navigation (Tabs) */
 .plans-nav {
     background: var(--white);
     padding: 20px 0;
     border-bottom: 1px solid #E1E8ED;
-    position: sticky;
-    top: 80px;
+    position: relative;
     z-index: 100;
 }
 
@@ -1023,121 +1022,56 @@ img {
     border-color: var(--primary-color);
 }
 
-.plan-section {
-    padding: 60px 0;
+/* Section */
+.insurance-section {
+    padding: 60px 20px;
     display: none;
+    max-width: 1000px;
+    margin: auto;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-.plan-section.active {
+.insurance-section.active {
     display: block;
 }
 
-.plan-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.plan-header .plan-icon {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.plan-header h2 {
-    font-size: 2.5rem;
+.insurance-section h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
-}
-
-.plan-header p {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.plans-comparison {
-    margin-top: 3rem;
-}
-
-.comparison-table {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.plan-card.basic {
-    border-top: 4px solid var(--primary-color);
-}
-
-.plan-card.premium {
-    border-top: 4px solid var(--accent-color);
-}
-
-.plan-card.family {
-    border-top: 4px solid #28A745;
-}
-
-.plan-card.featured {
-    border: 3px solid var(--accent-color);
-    transform: scale(1.02);
-}
-
-.plan-badge {
-    position: absolute;
-    top: -10px;
-    right: 20px;
-    background: var(--accent-color);
-    color: var(--white);
-    padding: 5px 15px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-
-.plan-badge.recommended {
-    background: var(--primary-color);
-}
-
-.plan-price {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    margin: 1rem 0;
-}
-
-.currency {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.amount {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
-.period {
-    font-size: 1rem;
-    color: var(--text-light);
-}
-
-.coverage-amount {
     text-align: center;
-    background: var(--bg-light);
-    padding: 10px;
-    border-radius: var(--border-radius);
+}
+
+.insurance-section p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    text-align: center;
     margin-bottom: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-color);
 }
 
-.featured-btn {
-    background: var(--accent-color);
+.insurance-section h4 {
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.featured-btn:hover {
-    background: #C0392B;
+.insurance-section ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tab-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    .insurance-section {
+        padding: 30px 15px;
+    }
 }
 
 /* Claims Page */
@@ -2585,3 +2519,101 @@ a:focus {
     margin-top: 0.25rem;
     display: none;
 }
+/* Team Sections Common */
+.leadership,
+.corporate-team,
+.personal-team {
+  padding: 60px 20px;  /* space top-bottom, some left-right for mobile */
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* default 3 columns */
+  gap: 30px;
+}
+
+/* Team Member Card */
+.team-member {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.member-role {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.member-bio {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet */
+  }
+}
+
+@media (max-width: 576px) {
+  .team-grid {
+    grid-template-columns: 1fr; /* Mobile */
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .member-info h3 {
+    font-size: 16px;
+  }
+
+  .member-role,
+  .member-bio {
+    font-size: 13px;
+  }
+}
+
