@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurance Plans - WE CARE ASSURANCE</title>
     <link rel="icon" href="assets/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Nunito:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html" ><img src="assets/logo.png" alt="WE CARE ASSURANCE" class="logo"></a>
-                
+                <a href="index.html"><img src="assets/logo.png" alt="WE CARE ASSURANCE" class="logo"></a>
+
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="plans.html" class="nav-link active">Plans</a></li>
+                <li><a href="plans.html" class="nav-link active">What we offers</a></li>
                 <li><a href="claims.html" class="nav-link">Claims</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
-                
+
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -44,338 +48,299 @@
     <section class="plans-nav">
         <div class="container">
             <div class="plans-tabs">
-                <button class="tab-btn active" data-plan="health">Health Insurance</button>
-                <button class="tab-btn" data-plan="life">Life Insurance</button>
-                <button class="tab-btn" data-plan="motor">Motor Insurance</button>
-                <button class="tab-btn" data-plan="travel">Travel Insurance</button>
+                <button class="tab-btn health active" data-plan="health">Health Insurance</button>
+                <button class="tab-btn life" data-plan="life">Life Insurance</button>
+                <button class="tab-btn motor" data-plan="motor">Motor Insurance</button>
+                <button class="tab-btn travel" data-plan="travel">Travel Insurance</button>
+                <button class="tab-btn commercial" data-plan="commercial">Commercial Insurance</button>
+                <button class="tab-btn business" data-plan="business">Business Insurance</button>
+                <button class="tab-btn liability" data-plan="liability">Liability Insurance</button>
+                <button class="tab-btn employee-benefits" data-plan="employee-benefits">Employee Benefits</button>
+                <button class="tab-btn marine" data-plan="marine">Marine / Transit</button>
+                <button class="tab-btn property" data-plan="property">Property Insurance</button>
+                <button class="tab-btn home" data-plan="home">Home Insurance</button>
+                <button class="tab-btn fire" data-plan="fire">Fire Insurance</button>
+                <button class="tab-btn crop" data-plan="crop">Crop Insurance</button>
+                <button class="tab-btn retirement" data-plan="retirement">Retirement / Pension</button>
+
             </div>
         </div>
     </section>
 
-    <!-- Health Insurance Section -->
-    <section class="plan-section active" id="health">
-        <div class="container">
-            <div class="plan-header" data-aos="fade-up">
-                <div class="plan-icon">
-                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 14C19 18.5 12 22 12 22S5 18.5 5 14V9L12 2L19 9V14Z" stroke="#0057A4" stroke-width="2"/>
-                        <circle cx="12" cy="11" r="3" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h2>Health Insurance Plans</h2>
-                <p>Comprehensive medical coverage for you and your family with cashless treatment facilities</p>
-            </div>
+    <!-- Sections -->
+    <div id="sections">
+        <!-- paste all sections from my previous message here -->
+        <!-- Example: -->
+        <section id="health" class="insurance-section active">
+            <h2>Health Insurance</h2>
+            <p>Health insurance provides financial coverage for medical expenses incurred due to illness,
+                injury, or hospitalization.</p>
+            <h4>Coverage Includes:</h4>
+            <ul>
+                <li>Hospitalization expenses (room rent, nursing, doctor fees)</li>
+                <li>Day-care procedures & surgeries</li>
+                <li>Pre and post hospitalization costs</li>
+                <li>Critical illness cover (cancer, heart attack, kidney failure, etc.)</li>
+                <li>Maternity and newborn care (in some plans)</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Cashless treatment in network hospitals</li>
+                <li>Family floater options for the entire family</li>
+                <li>Tax benefits under Section 80D</li>
+            </ul>
+        </section>
+        <!-- Life Insurance -->
+        <section id="life" class="insurance-section">
+            <h2>Life Insurance</h2>
+            <p>Life insurance provides financial protection to your family in case of death or disability,
+                ensuring long-term security.</p>
+            <h4>Types:</h4>
+            <ul>
+                <li>Term Plan: High coverage at low premium</li>
+                <li>Whole Life: Lifetime coverage with maturity benefits</li>
+                <li>Endowment Policy: Insurance + savings</li>
+                <li>ULIP: Insurance + investment linked to market</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Financial security for dependents</li>
+                <li>Wealth creation with savings/investment options</li>
+                <li>Tax benefits and loan facility</li>
+            </ul>
+        </section>
 
-            <div class="plans-comparison">
-                <div class="comparison-table" data-aos="fade-up" data-aos-delay="100">
-                    <div class="plan-card basic">
-                
-                        <ul class="plan-features">
-                            <li>✓ Cashless treatment at 5000+ hospitals</li>
-                            <li>✓ Pre & post hospitalization (30/60 days)</li>
-                            <li>✓ Annual health checkup</li>
-                            <li>✓ Ambulance charges covered</li>
-                            <li>✓ Room rent: ₹3000/day</li>
-                            <li>✓ No co-payment</li>
-                            <li>✗ Maternity coverage</li>
-                            <li>✗ Critical illness cover</li>
-                        </ul>
-                        <button class="plan-btn">Choose Plan</button>
-                    </div>
+        <!-- Motor Insurance -->
+        <section id="motor" class="insurance-section">
+            <h2>Motor Insurance</h2>
+            <p>Motor insurance provides coverage against risks related to vehicles such as accidents, theft, and
+                damages.</p>
+            <h4>Types:</h4>
+            <ul>
+                <li>Third Party Insurance (Mandatory)</li>
+                <li>Comprehensive Insurance (Own vehicle + third-party)</li>
+                <li>Own Damage Cover</li>
+            </ul>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Accidents, theft, fire, natural calamities</li>
+                <li>Third-party injury, death, or property damage</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Mandatory by law (RTO requirement)</li>
+                <li>Repair/replacement expenses covered</li>
+                <li>No Claim Bonus (NCB) discount</li>
+            </ul>
+        </section>
 
-                    <div class="plan-card premium featured">
-                        
-                        <ul class="plan-features">
-                            <li>✓ Cashless treatment at 8000+ hospitals</li>
-                            <li>✓ Pre & post hospitalization (60/90 days)</li>
-                            <li>✓ Annual health checkup (Premium)</li>
-                            <li>✓ Ambulance charges covered</li>
-                            <li>✓ Room rent: ₹5000/day</li>
-                            <li>✓ No co-payment</li>
-                            <li>✓ Maternity coverage (₹50,000)</li>
-                            <li>✓ Critical illness cover (₹1 Lakh)</li>
-                        </ul>
-                        <button class="plan-btn featured-btn">Choose Plan</button>
-                    </div>
+        <!-- Travel Insurance -->
+        <section id="travel" class="insurance-section">
+            <h2>Travel Insurance</h2>
+            <p>Travel insurance ensures financial protection during domestic or international trips against
+                medical and travel-related risks.</p>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Medical emergencies abroad</li>
+                <li>Loss of passport, baggage, or documents</li>
+                <li>Flight delay or cancellation</li>
+                <li>Personal liability cover</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Protection against high foreign medical costs</li>
+                <li>Peace of mind during travel</li>
+                <li>Compensation for losses & delays</li>
+            </ul>
+        </section>
 
-                    <div class="plan-card family">
-                        <h3>Family Health</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">18,999</span>
-                            <span class="period">/year</span>
-                        </div>
-                        <div class="coverage-amount">Coverage: ₹10 Lakhs</div>
-                        <ul class="plan-features">
-                            <li>✓ Covers 4 family members</li>
-                            <li>✓ Cashless treatment at 10000+ hospitals</li>
-                            <li>✓ Pre & post hospitalization (60/120 days)</li>
-                            <li>✓ Annual health checkup (Comprehensive)</li>
-                            <li>✓ Ambulance charges covered</li>
-                            <li>✓ Room rent: ₹7500/day</li>
-                            <li>✓ No co-payment</li>
-                            <li>✓ Maternity coverage (₹75,000)</li>
-                            <li>✓ Critical illness cover (₹2 Lakhs)</li>
-                        </ul>
-                        <button class="plan-btn">Choose Plan</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Commercial Insurance -->
+        <section id="commercial" class="insurance-section">
+            <h2>Commercial Insurance</h2>
+            <p>Commercial insurance safeguards business properties, assets, and operations against various
+                risks.</p>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Fire and burglary damages</li>
+                <li>Property insurance (factories, shops, offices)</li>
+                <li>Machinery/equipment breakdown</li>
+                <li>Business interruption losses</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Ensures business continuity</li>
+                <li>Protection against natural disasters & theft</li>
+                <li>Legal liability coverage</li>
+            </ul>
+        </section>
+
+        <!-- Business Insurance -->
+        <section id="business" class="insurance-section">
+            <h2>Business Insurance</h2>
+            <p>Business insurance protects entrepreneurs and companies from operational, legal, and financial
+                risks.</p>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Commercial property insurance</li>
+                <li>Workers compensation insurance</li>
+                <li>Cyber liability insurance</li>
+                <li>Professional liability cover</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Protects employees and assets</li>
+                <li>Reduces financial burden from lawsuits</li>
+                <li>Provides long-term business stability</li>
+            </ul>
+        </section>
+
+        <!-- Liability Insurance -->
+        <section id="liability" class="insurance-section">
+            <h2>Liability Insurance</h2>
+            <p>Liability insurance covers legal expenses and damages if a third party is harmed by your business
+                or services.</p>
+            <h4>Types:</h4>
+            <ul>
+                <li>Public liability insurance</li>
+                <li>Product liability insurance</li>
+                <li>Professional indemnity insurance</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Covers court/legal expenses</li>
+                <li>Protects brand reputation</li>
+                <li>Required for businesses with customer exposure</li>
+            </ul>
+        </section>
+
+        <!-- Employee Benefits -->
+        <section id="employee-benefits" class="insurance-section">
+            <h2>Employee Benefits Insurance</h2>
+            <p>Employee benefits insurance provides group coverage for employees offered by employers.</p>
+            <h4>Types:</h4>
+            <ul>
+                <li>Group health insurance</li>
+                <li>Group term life insurance</li>
+                <li>Accidental coverage</li>
+                <li>Pension & retirement benefits</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Boosts employee satisfaction & retention</li>
+                <li>Tax benefits for employers</li>
+                <li>Financial security for employees</li>
+            </ul>
+        </section>
+
+        <!-- Marine / Transit Insurance -->
+        <section id="marine" class="insurance-section">
+            <h2>Marine / Transit Insurance</h2>
+            <p>Marine insurance protects goods and cargo during transit by sea, air, or road.</p>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Damage/loss during transportation</li>
+                <li>Import/export shipments</li>
+                <li>Risks of piracy, war, and natural disasters</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Essential for global trade</li>
+                <li>Protects against large financial losses</li>
+                <li>Ensures smooth logistics operations</li>
+            </ul>
+        </section>
+
+        <!-- Property Insurance -->
+        <section id="property" class="insurance-section">
+            <h2>Property Insurance</h2>
+            <p>Property insurance protects residential or commercial property from risks like theft, fire, and
+                disasters.</p>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Fire, theft, vandalism</li>
+                <li>Earthquake, flood, storm damages</li>
+                <li>Damage to building & contents</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Compensation for repair/reconstruction</li>
+                <li>Protects real estate assets</li>
+                <li>Peace of mind for owners</li>
+            </ul>
+        </section>
+
+        <!-- Home Insurance -->
+        <section id="home" class="insurance-section">
+            <h2>Home Insurance</h2>
+            <p>Home insurance provides financial protection to homeowners against risks that may damage their
+                property or belongings.</p>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Fire, burglary, earthquake, flood</li>
+                <li>Loss or damage of household contents</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Protects house and belongings</li>
+                <li>Financial stability in case of damage</li>
+            </ul>
+        </section>
+
+        <!-- Fire Insurance -->
+        <section id="fire" class="insurance-section">
+            <h2>Fire Insurance</h2>
+            <p>Fire insurance covers losses caused by fire-related accidents.</p>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Fire, lightning, explosion</li>
+                <li>Accidental fires</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Repair or rebuilding cost covered</li>
+                <li>Protects commercial & residential assets</li>
+            </ul>
+        </section>
+
+        <!-- Crop Insurance -->
+        <section id="crop" class="insurance-section">
+            <h2>Crop Insurance</h2>
+            <p>Crop insurance provides financial protection to farmers against crop losses due to unforeseen
+                events.</p>
+            <h4>Coverage:</h4>
+            <ul>
+                <li>Floods, drought, cyclones</li>
+                <li>Pest or disease outbreaks</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Stability for farmers’ income</li>
+                <li>Encourages agricultural growth</li>
+            </ul>
+        </section>
+
+        <!-- Retirement / Pension -->
+        <section id="retirement" class="insurance-section">
+            <h2>Retirement / Pension Insurance</h2>
+            <p>Pension insurance provides a steady income after retirement to ensure financial independence.</p>
+            <h4>Types:</h4>
+            <ul>
+                <li>Immediate annuity</li>
+                <li>Deferred annuity</li>
+                <li>Pension-linked investment plans</li>
+            </ul>
+            <h4>Benefits:</h4>
+            <ul>
+                <li>Financial independence post-retirement</li>
+                <li>Regular lifelong income</li>
+                <li>Tax benefits under pension rules</li>
+            </ul>
+        </section>
+
+    </div>
     </section>
 
-    <!-- Motor Insurance Section -->
-    <section class="plan-section" id="motor">
-        <div class="container">
-            <div class="plan-header" data-aos="fade-up">
-                <div class="plan-icon">
-                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
-                        <path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2S15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.92 18 21.92S20.92 20.61 20.92 19S19.61 17.08 18 17.08V16.08Z" fill="#0057A4"/>
-                    </svg>
-                </div>
-                <h2>Motor Insurance Plans</h2>
-                <p>Complete protection for your vehicle with comprehensive coverage and 24/7 roadside assistance</p>
-            </div>
 
-            <div class="plans-comparison">
-                <div class="comparison-table" data-aos="fade-up" data-aos-delay="100">
-                    <div class="plan-card basic">
-                        <h3>Third Party</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">2,999</span>
-                            <span class="period">/year</span>
-                        </div>
-                        <div class="coverage-amount">Legal Requirement</div>
-                        <ul class="plan-features">
-                            <li>✓ Third-party liability coverage</li>
-                            <li>✓ Legal compliance</li>
-                            <li>✓ Personal accident cover (₹15 Lakhs)</li>
-                            <li>✓ 24/7 claim support</li>
-                            <li>✗ Own damage coverage</li>
-                            <li>✗ Theft protection</li>
-                            <li>✗ Roadside assistance</li>
-                            <li>✗ Zero depreciation</li>
-                        </ul>
-                        <button class="plan-btn">Choose Plan</button>
-                    </div>
-
-                    <div class="plan-card premium featured">
-                        <div class="plan-badge recommended">Most Popular</div>
-                        <h3>Comprehensive</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">8,999</span>
-                            <span class="period">/year</span>
-                        </div>
-                        <div class="coverage-amount">Complete Protection</div>
-                        <ul class="plan-features">
-                            <li>✓ Third-party liability coverage</li>
-                            <li>✓ Own damage coverage</li>
-                            <li>✓ Theft protection</li>
-                            <li>✓ Personal accident cover (₹15 Lakhs)</li>
-                            <li>✓ 24/7 roadside assistance</li>
-                            <li>✓ Cashless garage network</li>
-                            <li>✓ Engine protection</li>
-                            <li>✗ Zero depreciation</li>
-                        </ul>
-                        <button class="plan-btn featured-btn">Choose Plan</button>
-                    </div>
-
-                    <div class="plan-card family">
-                        <h3>Zero Depreciation</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">12,999</span>
-                            <span class="period">/year</span>
-                        </div>
-                        <div class="coverage-amount">Premium Protection</div>
-                        <ul class="plan-features">
-                            <li>✓ Third-party liability coverage</li>
-                            <li>✓ Own damage coverage</li>
-                            <li>✓ Theft protection</li>
-                            <li>✓ Personal accident cover (₹15 Lakhs)</li>
-                            <li>✓ 24/7 roadside assistance</li>
-                            <li>✓ Cashless garage network</li>
-                            <li>✓ Engine protection</li>
-                            <li>✓ Zero depreciation coverage</li>
-                        </ul>
-                        <button class="plan-btn">Choose Plan</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Travel Insurance Section -->
-    <section class="plan-section" id="travel">
-        <div class="container">
-            <div class="plan-header" data-aos="fade-up">
-                <div class="plan-icon">
-                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
-                        <circle cx="12" cy="12" r="10" stroke="#0057A4" stroke-width="2"/>
-                        <path d="M8 14S9.5 16 12 16S16 14 16 14" stroke="#0057A4" stroke-width="2"/>
-                        <line x1="9" y1="9" x2="9.01" y2="9" stroke="#0057A4" stroke-width="2"/>
-                        <line x1="15" y1="9" x2="15.01" y2="9" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h2>Travel Insurance Plans</h2>
-                <p>Safe travels with comprehensive coverage for domestic and international trips</p>
-            </div>
-
-            <div class="plans-comparison">
-                <div class="comparison-table" data-aos="fade-up" data-aos-delay="100">
-                    <div class="plan-card basic">
-                        <h3>Domestic Travel</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">199</span>
-                            <span class="period">/trip</span>
-                        </div>
-                        <div class="coverage-amount">Coverage: ₹1 Lakh</div>
-                        <ul class="plan-features">
-                            <li>✓ Medical emergencies (₹50,000)</li>
-                            <li>✓ Trip cancellation (₹25,000)</li>
-                            <li>✓ Lost baggage (₹15,000)</li>
-                            <li>✓ Flight delay compensation</li>
-                            <li>✓ 24/7 assistance</li>
-                            <li>✗ Adventure sports coverage</li>
-                            <li>✗ High-value items coverage</li>
-                            <li>✗ Pre-existing conditions</li>
-                        </ul>
-                        <button class="plan-btn">Choose Plan</button>
-                    </div>
-
-                    <div class="plan-card premium featured">
-                        <div class="plan-badge recommended">Best Value</div>
-                        <h3>International</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">999</span>
-                            <span class="period">/trip</span>
-                        </div>
-                        <div class="coverage-amount">Coverage: ₹10 Lakhs</div>
-                        <ul class="plan-features">
-                            <li>✓ Medical emergencies (₹5 Lakhs)</li>
-                            <li>✓ Trip cancellation (₹2 Lakhs)</li>
-                            <li>✓ Lost baggage (₹75,000)</li>
-                            <li>✓ Flight delay compensation</li>
-                            <li>✓ 24/7 global assistance</li>
-                            <li>✓ Adventure sports coverage</li>
-                            <li>✓ High-value items (₹50,000)</li>
-                            <li>✗ Pre-existing conditions</li>
-                        </ul>
-                        <button class="plan-btn featured-btn">Choose Plan</button>
-                    </div>
-
-                    <div class="plan-card family">
-                        <h3>Annual Multi-Trip</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">4,999</span>
-                            <span class="period">/year</span>
-                        </div>
-                        <div class="coverage-amount">Unlimited Trips</div>
-                        <ul class="plan-features">
-                            <li>✓ Medical emergencies (₹10 Lakhs)</li>
-                            <li>✓ Trip cancellation (₹3 Lakhs)</li>
-                            <li>✓ Lost baggage (₹1 Lakh)</li>
-                            <li>✓ Flight delay compensation</li>
-                            <li>✓ 24/7 global assistance</li>
-                            <li>✓ Adventure sports coverage</li>
-                            <li>✓ High-value items (₹75,000)</li>
-                            <li>✓ Pre-existing conditions</li>
-                        </ul>
-                        <button class="plan-btn">Choose Plan</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Life Insurance Section -->
-    <section class="plan-section" id="life">
-        <div class="container">
-            <div class="plan-header" data-aos="fade-up">
-                <div class="plan-icon">
-                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
-                        <path d="M20 21V19C20 16.79 18.21 15 16 15H8C5.79 15 4 16.79 4 19V21" stroke="#0057A4" stroke-width="2"/>
-                        <circle cx="12" cy="7" r="4" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h2>Life Insurance Plans</h2>
-                <p>Secure your family's future with comprehensive life protection and investment options</p>
-            </div>
-
-            <div class="plans-comparison">
-                <div class="comparison-table" data-aos="fade-up" data-aos-delay="100">
-                    <div class="plan-card basic">
-                        <h3>Term Life</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">599</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <div class="coverage-amount">Coverage: ₹50 Lakhs</div>
-                        <ul class="plan-features">
-                            <li>✓ Pure life protection</li>
-                            <li>✓ Affordable premiums</li>
-                            <li>✓ Tax benefits under 80C</li>
-                            <li>✓ Accidental death benefit</li>
-                            <li>✓ Terminal illness benefit</li>
-                            <li>✓ Policy term: 30 years</li>
-                            <li>✗ Maturity benefit</li>
-                            <li>✗ Cash value</li>
-                        </ul>
-                        <button class="plan-btn">Choose Plan</button>
-                    </div>
-
-                    <div class="plan-card premium featured">
-                        <div class="plan-badge recommended">Popular Choice</div>
-                        <h3>Savings Plus</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">2,999</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <div class="coverage-amount">Coverage: ₹25 Lakhs</div>
-                        <ul class="plan-features">
-                            <li>✓ Life protection + savings</li>
-                            <li>✓ Guaranteed returns</li>
-                            <li>✓ Tax benefits under 80C</li>
-                            <li>✓ Accidental death benefit</li>
-                            <li>✓ Maturity benefit</li>
-                            <li>✓ Policy term: 20 years</li>
-                            <li>✓ Loyalty additions</li>
-                            <li>✓ Partial withdrawals</li>
-                        </ul>
-                        <button class="plan-btn featured-btn">Choose Plan</button>
-                    </div>
-
-                    <div class="plan-card family">
-                        <h3>Wealth Builder</h3>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">4,999</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <div class="coverage-amount">Coverage: ₹50 Lakhs</div>
-                        <ul class="plan-features">
-                            <li>✓ Life protection + investment</li>
-                            <li>✓ Market-linked returns</li>
-                            <li>✓ Tax benefits under 80C</li>
-                            <li>✓ Accidental death benefit</li>
-                            <li>✓ Fund switching options</li>
-                            <li>✓ Policy term: 25 years</li>
-                            <li>✓ Top-up facility</li>
-                            <li>✓ Systematic withdrawal</li>
-                        </ul>
-                        <button class="plan-btn">Choose Plan</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
@@ -389,6 +354,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Footer -->
@@ -398,13 +364,32 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <img src="assets/logo.png" alt="WE CARE ASSURANCE">
-                        
+
                     </div>
-                    <p>Protecting what matters most to you with trust, care, and unwavering commitment since 1999.</p>
+                    <p>Protecting what matters most to you with trust, care, and unwavering commitment since 2003.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M23 3A10.9 10.9 0 0 1 20.1 4.7A4.48 4.48 0 0 0 22.46 1.69A9 9 0 0 1 19.47 3.08A4.48 4.48 0 0 0 16.25 2A4.48 4.48 0 0 0 12 6.44V7.56A10.66 10.66 0 0 1 3 4S-1 13 8 17A11.64 11.64 0 0 1 1 19C10 24 21 19 21 7.5A4.5 4.5 0 0 0 20.85 6.13A7.72 7.72 0 0 0 23 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 8A6 6 0 0 1 22 14V21H18V14A2 2 0 0 0 16 12A2 2 0 0 0 14 14V21H10V14A6 6 0 0 1 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></a>
+                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M23 3A10.9 10.9 0 0 1 20.1 4.7A4.48 4.48 0 0 0 22.46 1.69A9 9 0 0 1 19.47 3.08A4.48 4.48 0 0 0 16.25 2A4.48 4.48 0 0 0 12 6.44V7.56A10.66 10.66 0 0 1 3 4S-1 13 8 17A11.64 11.64 0 0 1 1 19C10 24 21 19 21 7.5A4.5 4.5 0 0 0 20.85 6.13A7.72 7.72 0 0 0 23 3Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M16 8A6 6 0 0 1 22 14V21H18V14A2 2 0 0 0 16 12A2 2 0 0 0 14 14V21H10V14A6 6 0 0 1 16 8Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -417,14 +402,25 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Insurance Plans</h3>
-                    <ul>
-                        <li><a href="plans.html#health">Health Insurance</a></li>
-                        <li><a href="plans.html#motor">Motor Insurance</a></li>
-                        <li><a href="plans.html#travel">Travel Insurance</a></li>
-                        <li><a href="plans.html#life">Life Insurance</a></li>
-                    </ul>
-                </div>
+    <h3>Insurance Plans</h3>
+    <ul>
+        <li><a href="plans.html#health">Health Insurance</a></li>
+        <li><a href="plans.html#life">Life Insurance</a></li>
+        <li><a href="plans.html#motor">Motor Insurance</a></li>
+        <li><a href="plans.html#travel">Travel Insurance</a></li>
+        <li><a href="plans.html#commercial">Commercial Insurance</a></li>
+        <li><a href="plans.html#business">Business Insurance</a></li>
+        <li><a href="plans.html#liability">Liability Insurance</a></li>
+        <li><a href="plans.html#employee-benefits">Employee Benefits</a></li>
+        <li><a href="plans.html#marine">Marine / Transit</a></li>
+        <li><a href="plans.html#property">Property Insurance</a></li>
+        <li><a href="plans.html#home">Home Insurance</a></li>
+        <li><a href="plans.html#fire">Fire Insurance</a></li>
+        <li><a href="plans.html#crop">Crop Insurance</a></li>
+        <li><a href="plans.html#retirement">Retirement / Pension</a></li>
+    </ul>
+</div>
+
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <div class="contact-info">
@@ -435,12 +431,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 WE CARE ASSURANCE. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2025 WE CARE ASSURANCE. All rights reserved. | Designed by Aina Tech Services LLP.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    
+
 </body>
+
 </html>
