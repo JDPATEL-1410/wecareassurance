@@ -1,5 +1,5 @@
 // Main JavaScript functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initNavigation();
     initAnimations();
     initCounters();
@@ -73,7 +73,7 @@ function initAnimations() {
 // Animated counters
 function initCounters() {
     const counters = document.querySelectorAll('.stat-number');
-    
+
     const counterObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -121,7 +121,7 @@ function initTestimonialCarousel() {
     function updateCarousel() {
         const translateX = -currentIndex * 100;
         track.style.transform = `translateX(${translateX}%)`;
-        
+
         indicators.forEach((indicator, index) => {
             indicator.classList.toggle('active', index === currentIndex);
         });
@@ -180,11 +180,11 @@ function initPlanTabs() {
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const planType = btn.getAttribute('data-plan');
-            
+
             // Update active tab
             tabBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
+
             // Show corresponding section
             planSections.forEach(section => {
                 if (section.id === planType) {
@@ -247,7 +247,7 @@ function initScrollEffects() {
 // Simple AOS (Animate On Scroll) implementation
 function initAOS() {
     const elements = document.querySelectorAll('[data-aos]');
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -333,19 +333,53 @@ const tabs = document.querySelectorAll(".tab-btn");
 const sections = document.querySelectorAll(".insurance-section");
 
 tabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
+    tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
 
-    const target = tab.getAttribute("data-plan");
-    sections.forEach(section => {
-      section.classList.remove("active");
-      if (section.id === target) {
-        section.classList.add("active");
-      }
+        const target = tab.getAttribute("data-plan");
+        sections.forEach(section => {
+            section.classList.remove("active");
+            if (section.id === target) {
+                section.classList.add("active");
+            }
+        });
     });
-  });
+});
+const carousel = document.getElementById('heroImageCarousel');
+const dynamicWord = document.getElementById('dynamicWord');
+
+carousel.addEventListener('slid.bs.carousel', function (event) {
+    const activeItem = carousel.querySelector('.carousel-item.active');
+    const newWord = activeItem.getAttribute('data-word');
+    dynamicWord.textContent = newWord;
 });
 
+// Tab Switch LI / GI
+const buttons = document.querySelectorAll(".tab-btn");
+const section = document.querySelectorAll(".insurance-section");
 
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
 
+        const plan = btn.dataset.plan;
+        sections.forEach(sec => {
+            sec.classList.remove("active");
+            if (sec.id === plan) {
+                sec.classList.add("active");
+            }
+        });
+    });
+});
+// Show popup on exit intent
+document.addEventListener("mouseleave", function (e) {
+    if (e.clientY < 10) { // near top of page
+        document.getElementById("review-popup").style.display = "flex";
+    }
+});
+
+function closeReviewPopup() {
+    document.getElementById("review-popup").style.display = "none";
+}
