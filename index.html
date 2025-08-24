@@ -41,71 +41,84 @@
             </div>
         </div>
     </nav>
+
     <!-- Hero Section -->
-<!-- Hero Section -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">Insurance with <span class="highlight">Assurance</span></h1>
-            <p class="hero-subtitle">Protecting what matters most to you with trust, care, and unwavering commitment</p>
-            <div class="hero-buttons">
-                <a href="plans.html" class="btn-primary">Explore Plans</a>
-                <a href="about.html" class="btn-secondary">Learn More</a>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span id="insauranceText">Insurance with </span>
+                    <span class="highlight" id="dynamicWord">Assurance</span>
+                </h1>
+                <p class="hero-subtitle">Protecting what matters most to you with trust, care, and unwavering commitment
+                </p>
+                <div class="hero-buttons">
+                    <a href="plans.html" class="btn-primary">Explore Plans</a>
+                    <a href="about.html" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Image Slider -->
+            <div class="hero-slider">
+                <div id="heroImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <!-- Carousel Inner -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-word="Assurance">
+                            <img src="assets/356.jpg" alt="Insurance Protection" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-word="Health">
+                            <img src="assets/361.jpg" alt="Health Insurance" class="d-block w-100 "
+                                style="object-position: top;">
+                        </div>
+                        <div class="carousel-item" data-word="Car">
+                            <img src="assets/349.jpg" alt="Car Insurance" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-word="Marine">
+                            <img src="assets/353.jpg" alt="Marine Insurance" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-word="Fire">
+                            <img src="assets/354.jpg" alt="Fire Insurance" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-word="Labour">
+                            <img src="assets/357.jpg" alt="Labour Insurance" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-word="Motor">
+                            <img src="assets/350.jpg" alt="Motor Insurance" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev visually-hidden" type="button"
+                        data-bs-target="#heroImageCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next visually-hidden" type="button"
+                        data-bs-target="#heroImageCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
-        
-        <!-- Image Slider -->  
-        <div class="hero-slider">
-            <div id="heroImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <!-- Carousel Inner -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/356.jpg" alt="Insurance Protection" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/361.jpg" alt="Health Insurance" class="d-block w-100 " style="object-position: top;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/349.jpg" alt="Motor Insurance" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/353.jpg" alt="Travel Insurance" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/354.jpg" alt="Life Insurance" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/357.jpg" alt="Life Insurance" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/350.jpg" alt="Life Insurance" class="d-block w-100">
-                    </div>
-                </div>
-
-                <!-- Carousel Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#heroImageCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                </div>
-
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#heroImageCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#heroImageCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- About Section -->
@@ -153,267 +166,68 @@
     </section>
 
     <!-- Plans Section -->
-   <section class="plans-section" id="plans">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Our Insurance Plans</h2>
-            <p class="section-subtitle">Choose the perfect coverage for your needs</p>
-        </div>
-        <div class="plans-grid">
-            <!-- Existing Plans -->
-            <div class="plan-card" data-aos="fade-up">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 14C19 18.5 12 22 12 22S5 18.5 5 14V9L12 2L19 9V14Z" stroke="#0057A4" stroke-width="2"/>
-                        <circle cx="12" cy="11" r="3" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Health Insurance</h3>
-                <p>Comprehensive medical coverage for you and your family</p>
-                <ul class="plan-features">
-                    <li>✓ Cashless treatment</li>
-                    <li>✓ Pre & post hospitalization</li>
-                    <li>✓ Annual health checkup</li>
-                </ul>
-                <a href="plans.html#health" class="plan-btn">Learn More</a>
+    <section class="plans-section" id="plans">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Insurance Plans</h2>
+                <p class="section-subtitle">Choose the perfect coverage for your needs</p>
             </div>
+            <div class="plans-grid">
 
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2S15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.92 18 21.92S20.92 20.61 20.92 19S19.61 17.08 18 17.08V16.08Z" fill="#0057A4"/>
-                    </svg>
+                <!-- Life Insurance -->
+                <div class="plan-card" data-aos="fade-up">
+                    <div class="plan-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 21V19C20 16.79 18.21 15 16 15H8C5.79 15 4 16.79 4 19V21" stroke="#0057A4"
+                                stroke-width="2" />
+                            <circle cx="12" cy="7" r="4" stroke="#0057A4" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3>Life Insurance</h3>
+                    <p>Secure your family's future with life protection and savings plans</p>
+                    <ul class="plan-features">
+                        <li>✓ Financial security</li>
+                        <li>✓ Retirement & pension plans</li>
+                        <li>✓ Flexible premium options</li>
+                    </ul>
+                    <a href="plans.html#life" class="plan-btn">Learn More</a>
                 </div>
-                <h3>Motor Insurance</h3>
-                <p>Complete protection for your vehicle and peace of mind</p>
-                <ul class="plan-features">
-                    <li>✓ Third-party liability</li>
-                    <li>✓ Own damage coverage</li>
-                    <li>✓ 24/7 roadside assistance</li>
-                </ul>
-                <a href="plans.html#motor" class="plan-btn">Learn More</a>
-            </div>
 
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <circle cx="12" cy="12" r="10" stroke="#0057A4" stroke-width="2"/>
-                        <path d="M8 14S9.5 16 12 16S16 14 16 14" stroke="#0057A4" stroke-width="2"/>
-                        <line x1="9" y1="9" x2="9.01" y2="9" stroke="#0057A4" stroke-width="2"/>
-                        <line x1="15" y1="9" x2="15.01" y2="9" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
+                <!-- General Insurance -->
+                <div class="plan-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="plan-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#0057A4" stroke-width="2" />
+                            <path d="M8 14S9.5 16 12 16S16 14 16 14" stroke="#0057A4" stroke-width="2" />
+                            <line x1="9" y1="9" x2="9.01" y2="9" stroke="#0057A4" stroke-width="2" />
+                            <line x1="15" y1="9" x2="15.01" y2="9" stroke="#0057A4" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3>General Insurance</h3>
+                    <p>Comprehensive coverage for health, motor, travel, business & more</p>
+                    <ul class="plan-features">
+                        <li>✓ Health & Motor Insurance</li>
+                        <li>✓ Travel & Property cover</li>
+                        <li>✓ Business & Liability protection</li>
+                    </ul>
+                    <a href="plans.html#general" class="plan-btn">Learn More</a>
                 </div>
-                <h3>Travel Insurance</h3>
-                <p>Safe travels with comprehensive coverage worldwide</p>
-                <ul class="plan-features">
-                    <li>✓ Medical emergencies</li>
-                    <li>✓ Trip cancellation</li>
-                    <li>✓ Lost baggage coverage</li>
-                </ul>
-                <a href="plans.html#travel" class="plan-btn">Learn More</a>
-            </div>
-            
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M20 21V19C20 16.79 18.21 15 16 15H8C5.79 15 4 16.79 4 19V21" stroke="#0057A4" stroke-width="2"/>
-                        <circle cx="12" cy="7" r="4" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Life Insurance</h3>
-                <p>Secure your family's future with life protection</p>
-                <ul class="plan-features">
-                    <li>✓ Financial security</li>
-                    <li>✓ Tax benefits</li>
-                    <li>✓ Flexible premium options</li>
-                </ul>
-                <a href="plans.html#life" class="plan-btn">Learn More</a>
-            </div>
 
-            <!-- New Plans -->
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <rect x="3" y="7" width="18" height="13" stroke="#0057A4" stroke-width="2"/>
-                        <path d="M3 10L12 4L21 10" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Commercial Insurance</h3>
-                <p>Protect your business assets from risks and damages</p>
-                <ul class="plan-features">
-                    <li>✓ Covers large enterprises</li>
-                    <li>✓ Property & liability coverage</li>
-                    <li>✓ Customized solutions</li>
-                </ul>
-                <a href="plans.html#commercial" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="500">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M20 21H4V8L12 3L20 8V21Z" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Business Insurance</h3>
-                <p>Comprehensive cover for small and medium enterprises</p>
-                <ul class="plan-features">
-                    <li>✓ Protects assets & employees</li>
-                    <li>✓ Liability coverage</li>
-                    <li>✓ Continuity support</li>
-                </ul>
-                <a href="plans.html#business" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="600">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <circle cx="12" cy="12" r="9" stroke="#0057A4" stroke-width="2"/>
-                        <path d="M12 7V12L15 15" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Liability Insurance</h3>
-                <p>Safeguard against legal claims and obligations</p>
-                <ul class="plan-features">
-                    <li>✓ Professional liability</li>
-                    <li>✓ Third-party protection</li>
-                    <li>✓ Legal expense coverage</li>
-                </ul>
-                <a href="plans.html#liability" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="700">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M5 19H19V5H5V19Z" stroke="#0057A4" stroke-width="2"/>
-                        <circle cx="9" cy="9" r="1" fill="#0057A4"/>
-                        <circle cx="15" cy="9" r="1" fill="#0057A4"/>
-                        <circle cx="12" cy="15" r="2" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Employee Benefit Policies</h3>
-                <p>Support employees with health, retirement, and wellness</p>
-                <ul class="plan-features">
-                    <li>✓ Group health coverage</li>
-                    <li>✓ Retirement benefits</li>
-                    <li>✓ Employee wellness programs</li>
-                </ul>
-                <a href="plans.html#employee-benefits" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="800">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M3 6H21V18H3V6Z" stroke="#0057A4" stroke-width="2"/>
-                        <path d="M3 10H21" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Marine / Transit Insurance</h3>
-                <p>Secure goods against transit and shipping risks</p>
-                <ul class="plan-features">
-                    <li>✓ Covers sea & air cargo</li>
-                    <li>✓ Loss & damage protection</li>
-                    <li>✓ International coverage</li>
-                </ul>
-                <a href="plans.html#marine" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="900">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <rect x="4" y="8" width="16" height="12" stroke="#0057A4" stroke-width="2"/>
-                        <path d="M12 8V4" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Property Insurance</h3>
-                <p>Coverage for residential and commercial properties</p>
-                <ul class="plan-features">
-                    <li>✓ Fire & theft protection</li>
-                    <li>✓ Natural disaster coverage</li>
-                    <li>✓ Affordable premiums</li>
-                </ul>
-                <a href="plans.html#property" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="1000">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M12 3L2 9H22L12 3Z" stroke="#0057A4" stroke-width="2"/>
-                        <rect x="4" y="10" width="16" height="10" stroke="#0057A4" stroke-width="2"/>
-                    </svg> 
-                </div>
-                <h3>Home Insurance</h3>
-                <p>Protect your home and personal belongings</p>
-                <ul class="plan-features">
-                    <li>✓ Fire & earthquake coverage</li>
-                    <li>✓ Theft protection</li>
-                    <li>✓ Affordable premiums</li>
-                </ul>
-                <a href="plans.html#home" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="1100">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M6 20V10L12 4L18 10V20H6Z" stroke="#0057A4" stroke-width="2"/> 
-                        <path d="M9 20V14H15V20" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Fire Insurance</h3>
-                <p>Financial protection against fire-related losses</p>
-                <ul class="plan-features">
-                    <li>✓ Protects assets & property</li>
-                    <li>✓ Industrial & commercial cover</li>
-                    <li>✓ Immediate assistance</li>
-                </ul>
-                <a href="plans.html#fire" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="1200">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path d="M4 20H20L12 4L4 20Z" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Crop Insurance</h3>
-                <p>Coverage for farmers against crop failure or loss</p>
-                <ul class="plan-features">
-                    <li>✓ Weather risk protection</li>
-                    <li>✓ Pest & disease coverage</li>
-                    <li>✓ Government supported schemes</li>
-                </ul>
-                <a href="plans.html#crop" class="plan-btn">Learn More</a>
-            </div>
-
-            <div class="plan-card" data-aos="fade-up" data-aos-delay="1300">
-                <div class="plan-icon">
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <circle cx="12" cy="12" r="10" stroke="#0057A4" stroke-width="2"/>
-                        <path d="M12 6V12L16 14" stroke="#0057A4" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Retirement / Pension Plans</h3>
-                <p>Secure income after retirement with pension benefits</p>
-                <ul class="plan-features">
-                    <li>✓ Regular pension payouts</li>
-                    <li>✓ Long-term wealth building</li>
-                    <li>✓ Secure retirement future</li>
-                </ul>
-                <a href="plans.html#retirement" class="plan-btn">Learn More</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
 
     <!-- Statistics Section -->
     <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item" data-aos="fade-up">
-                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-number" data-target="6000">0</div>
                     <div class="stat-label">Happy Customers</div>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-number" data-target="22">0</div>
                     <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
@@ -526,43 +340,50 @@
                         <li><a href="claims.html">Claims</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-    <h3>Insurance Plans</h3>
-    <ul>
-        <li><a href="plans.html#health">Health Insurance</a></li>
-        <li><a href="plans.html#life">Life Insurance</a></li>
-        <li><a href="plans.html#motor">Motor Insurance</a></li>
-        <li><a href="plans.html#travel">Travel Insurance</a></li>
-        <li><a href="plans.html#commercial">Commercial Insurance</a></li>
-        <li><a href="plans.html#business">Business Insurance</a></li>
-        <li><a href="plans.html#liability">Liability Insurance</a></li>
-        <li><a href="plans.html#employee-benefits">Employee Benefits</a></li>
-        <li><a href="plans.html#marine">Marine / Transit</a></li>
-        <li><a href="plans.html#property">Property Insurance</a></li>
-        <li><a href="plans.html#home">Home Insurance</a></li>
-        <li><a href="plans.html#fire">Fire Insurance</a></li>
-        <li><a href="plans.html#crop">Crop Insurance</a></li>
-        <li><a href="plans.html#retirement">Retirement / Pension</a></li>
-    </ul>
-</div>
+                    <h3>Insurance Plans</h3>
+                    <ul>
+                        <li><a href="plans.html#life">Life Insurance</a></li>
+                        <li><a href="plans.html#general">General Insurance</a></li>
+                    </ul>
+                </div>
 
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <div class="contact-info">
-                        <p><strong>Phone:</strong> +91 98765 43210</p>
+                        <p><strong>Anand Branch:</strong><br>
+                            F-4/5 City Plaza, Nr. Baliyadev Crossing, Nr. Sardargunj, Anand-388001<br>
+                            <strong>Phone:</strong> 98241 29366, 93772 77703
+                        </p>
+                        <p><strong>Vadodara Branch:</strong><br>
+                            504, The Park, Akshar Chowk, Old Padra Road, Vadodara-390020
+                        </p>
                         <p><strong>Email:</strong> info@wecareassurance.com</p>
-                        <p><strong>Address:</strong> 123 Insurance Street, Mumbai, Maharashtra 400001</p>
                     </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2025 WE CARE ASSURANCE. All rights reserved. | Designed by Aina Tech Services LLP.</p>
             </div>
+
         </div>
     </footer>
+    <section class="review-section">
+        <div class="container">
+            <h2 class="section-title">Review Us on Google</h2>
+            <p>We value your feedback! Please share your experience with us.</p>
+            <a href="https://search.google.com/local/writereview?placeid=ChIJt2EYrRavXzkR-3qAZyQhbnY" target="_blank"
+                class="review-btn">
+                ⭐ Write a Review
+            </a>
+        </div>
+    </section>
+
 
     <script src="js/main.js"></script>
-    
+
 </body>
 
 </html>
