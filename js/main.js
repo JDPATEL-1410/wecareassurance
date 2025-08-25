@@ -373,13 +373,4 @@ buttons.forEach(btn => {
         });
     });
 });
-// Show popup on exit intent
-document.addEventListener("mouseleave", function (e) {
-    if (e.clientY < 10) { // near top of page
-        document.getElementById("review-popup").style.display = "flex";
-    }
-});
 
-function closeReviewPopup() {
-    document.getElementById("review-popup").style.display = "none";
-}
