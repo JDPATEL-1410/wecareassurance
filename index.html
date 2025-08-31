@@ -47,8 +47,9 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
+                    <span class="highlight1" id="dynamicWord">Life</span>
                     <span id="insauranceText">Insurance with </span>
-                    <span class="highlight" id="dynamicWord">Assurance</span>
+                    <span class="highlight">Assurance</span>
                 </h1>
                 <p class="hero-subtitle">Protecting what matters most to you with trust, care, and unwavering commitment
                 </p>
@@ -63,7 +64,7 @@
                 <div id="heroImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <!-- Carousel Inner -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-word="Assurance">
+                        <div class="carousel-item active" data-word="Life">
                             <img src="assets/356.jpg" alt="Insurance Protection" class="d-block w-100">
                         </div>
                         <div class="carousel-item" data-word="Health">
@@ -77,7 +78,7 @@
                             <img src="assets/353.jpg" alt="Marine Insurance" class="d-block w-100">
                         </div>
                         <div class="carousel-item" data-word="Fire">
-                            <img src="assets/354.jpg" alt="Fire Insurance" class="d-block w-100">
+                            <img src="assets/359.jpg" alt="Fire Insurance" class="d-block w-100">
                         </div>
                         <div class="carousel-item" data-word="Labour">
                             <img src="assets/357.jpg" alt="Labour Insurance" class="d-block w-100">
@@ -138,7 +139,7 @@
                         </svg>
                     </div>
                     <h3>Trust</h3>
-                    <p>Over 25 years of reliable service and transparent dealings with our valued customers</p>
+                    <p>Over 23 years of reliable service and transparent dealings with our valued customers</p>
                 </div>
                 <div class="value-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="value-icon">
@@ -148,7 +149,7 @@
                         </svg>
                     </div>
                     <h3>Assurance</h3>
-                    <p>Comprehensive coverage with guaranteed claims settlement and 24/7 support</p>
+                    <p>Comprehensive coverage with guaranteed claims settlement </p>
                 </div>
                 <div class="value-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="value-icon">
@@ -174,7 +175,7 @@
             </div>
             <div class="plans-grid">
 
-                <!-- Life Insurance -->
+                <!-- Personal Line -->
                 <div class="plan-card" data-aos="fade-up">
                     <div class="plan-icon">
                         <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
@@ -183,17 +184,17 @@
                             <circle cx="12" cy="7" r="4" stroke="#0057A4" stroke-width="2" />
                         </svg>
                     </div>
-                    <h3>Life Insurance</h3>
-                    <p>Secure your family's future with life protection and savings plans</p>
+                    <h3>Personal Line</h3>
+                    <p>Protect yourself and your family with tailored personal insurance solutions</p>
                     <ul class="plan-features">
-                        <li>✓ Financial security</li>
-                        <li>✓ Retirement & pension plans</li>
+                        <li>✓ Health & Life Protection</li>
+                        <li>✓ Vehicle & Travel Insurance</li>
                         <li>✓ Flexible premium options</li>
                     </ul>
-                    <a href="plans.html#life" class="plan-btn">Learn More</a>
+                    <a href="plans.html#personal" class="plan-btn">Learn More</a>
                 </div>
 
-                <!-- General Insurance -->
+                <!-- Corporate Line -->
                 <div class="plan-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="plan-icon">
                         <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
@@ -203,16 +204,15 @@
                             <line x1="15" y1="9" x2="15.01" y2="9" stroke="#0057A4" stroke-width="2" />
                         </svg>
                     </div>
-                    <h3>General Insurance</h3>
-                    <p>Comprehensive coverage for health, motor, travel, business & more</p>
+                    <h3>Corporate Line</h3>
+                    <p>Comprehensive protection for businesses, employees, and corporate assets</p>
                     <ul class="plan-features">
-                        <li>✓ Health & Motor Insurance</li>
-                        <li>✓ Travel & Property cover</li>
-                        <li>✓ Business & Liability protection</li>
+                        <li>✓ Employee Health & Group Insurance</li>
+                        <li>✓ Property & Liability Coverage</li>
+                        <li>✓ Customized Corporate Solutions</li>
                     </ul>
-                    <a href="plans.html#general" class="plan-btn">Learn More</a>
+                    <a href="plans.html#corporate" class="plan-btn">Learn More</a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -223,71 +223,55 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item" data-aos="fade-up">
-                    <div class="stat-number" data-target="6000">0</div>
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="8000">0<span style="color:#E74C3C;">+</span></div>
                     <div class="stat-label">Happy Customers</div>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-number" data-target="22">0</div>
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="22">0<span style="color:#E74C3C;">+</span></div>
                     <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-number" data-target="98">0</div>
-                    <div class="stat-label">Claims Settled %</div>
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9,10H7V12H9V10M13,10H11V12H13V10M17,10H15V12H17V10M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z" />
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="1000">0<span style="color:#E74C3C;">+</span></div>
+                    <div class="stat-label">Claims Settled</div>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-number" data-target="24">0</div>
-                    <div class="stat-label">Hours Support</div>
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="8000">0<span style="color:#E74C3C;">+</span></div>
+                    <div class="stat-label">Active Policies</div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">How It Works</h2>
-                <p class="section-subtitle">Simple steps to get your insurance coverage</p>
-            </div>
-            <div class="steps-timeline">
-                <div class="step-item" data-aos="fade-right">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Choose Your Plan</h3>
-                        <p>Browse our comprehensive insurance plans and select the one that best fits your needs</p>
-                    </div>
-                </div>
-                <div class="step-item" data-aos="fade-left">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Fill Application</h3>
-                        <p>Complete our simple online application form with your personal and coverage details</p>
-                    </div>
-                </div>
-                <div class="step-item" data-aos="fade-right">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Get Approved</h3>
-                        <p>Our team reviews your application and provides quick approval within 24-48 hours</p>
-                    </div>
-                </div>
-                <div class="step-item" data-aos="fade-left">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Stay Protected</h3>
-                        <p>Enjoy comprehensive coverage with 24/7 support and hassle-free claim process</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
             <div class="cta-content" data-aos="fade-up">
                 <h2>Ready to Get Protected?</h2>
-                <p>Join thousands of satisfied customers who trust WE CARE ASSURANCE for their insurance needs</p>
+                <p>Join thousands of satisfied customers who trust WE CARE ASSURANCE for their insurance
+                    needs</p>
                 <div class="cta-buttons">
                     <a href="plans.html" class="btn-primary">Get Quote Now</a>
                     <a href="contact.html" class="btn-secondary">Contact Us</a>
@@ -305,7 +289,8 @@
                         <img src="assets/logo.png" alt="WE CARE ASSURANCE">
 
                     </div>
-                    <p>Protecting what matters most to you with trust, care, and unwavering commitment since 2003.</p>
+                    <p>Protecting what matters most to you with trust, care, and unwavering commitment since
+                        2003.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                                 <path
@@ -344,10 +329,11 @@
                 <div class="footer-section">
                     <h3>Insurance Plans</h3>
                     <ul>
-                        <li><a href="plans.html#life">Life Insurance</a></li>
-                        <li><a href="plans.html#general">General Insurance</a></li>
+                        <li><a href="plans.html#personal">Personal Line</a></li>
+                        <li><a href="plans.html#commercial">Commercial Line</a></li>
                     </ul>
                 </div>
+
 
                 <div class="footer-section">
                     <h3>Contact Info</h3>
@@ -365,16 +351,18 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 WE CARE ASSURANCE. All rights reserved. | Designed by Aina Tech Services LLP.</p>
+                <p>&copy; 2025 WE CARE ASSURANCE. All rights reserved. | Designed by Aina Tech Services LLP.
+                </p>
             </div>
 
         </div>
     </footer>
-   
+
 
 
     <script src="js/main.js"></script>
 
 </body>
+
 
 </html>
