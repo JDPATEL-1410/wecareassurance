@@ -329,6 +329,7 @@ window.WeCareAssurance = {
     validateRequired
 };
 // Tab Switching
+// Tab Switching
 const tabs = document.querySelectorAll(".tab-btn");
 const sections = document.querySelectorAll(".insurance-section");
 
@@ -346,14 +347,20 @@ tabs.forEach(tab => {
         });
     });
 });
+
 const carousel = document.getElementById('heroImageCarousel');
 const dynamicWord = document.getElementById('dynamicWord');
 
-carousel.addEventListener('slid.bs.carousel', function (event) {
+carousel.addEventListener('slid.bs.carousel', function () {
     const activeItem = carousel.querySelector('.carousel-item.active');
-    const newWord = activeItem.getAttribute('data-word');
+    let newWord = activeItem.getAttribute('data-word') || "";
+
+    // Remove unwanted words if present
+    newWord = newWord.replace(/assurance|insurance/gi, "").trim();
+
     dynamicWord.textContent = newWord;
 });
+
 
 // Tab Switch LI / GI
 const buttons = document.querySelectorAll(".tab-btn");
@@ -373,4 +380,111 @@ buttons.forEach(btn => {
         });
     });
 });
+// Predefined FAQs
+  const faqs = {
+    "health insurance": "Health Insurance covers medical expenses due to illness, injury, or hospitalization.",
+    "motor insurance": "Motor Insurance covers vehicles against accidents, theft, and third-party liabilities.",
+    "travel insurance": "Travel Insurance covers emergencies during travel, trip cancellations, and baggage loss.",
+    "home insurance": "Home Insurance protects your house & belongings against fire, theft, and natural disasters.",
+    "corporate insurance": "Corporate Insurance covers businesses for property, employees, and liability risks.",
+    "liability insurance": "Liability Insurance protects against legal claims due to injury or damage to third parties."
+  };
 
+  const chatBtn = document.getElementById("chatBtn");
+  const chatBox = document.getElementById("chatBox");
+  const sendBtn = document.getElementById("sendBtn");
+  const chatInput = document.getElementById("chatInput");
+  const chatMessages = document.getElementById("chatMessages");
+
+  // Toggle chatbox
+  chatBtn.onclick = () => {
+    chatBox.style.display = (chatBox.style.display === "none" ? "flex" : "none");
+  };
+
+  // OpenAI API function
+  async function getAIResponse(message) {
+    try {
+      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer YOUR_API_KEY" // <-- replace with your OpenAI key
+        },
+        body: JSON.stringify({
+          model: "gpt-4o-mini",
+          messages: [{ role: "user", content: message }]
+        })
+      });
+
+      const data = await response.json();
+      return data.choices[0].message.content;
+    } catch (error) {
+      return "⚠️ Sorry, I couldn’t fetch the answer right now.";
+    }
+  }
+
+  // Send message
+  sendBtn.onclick = async () => {
+    const userMsg = chatInput.value.trim();
+    if (!userMsg) return;
+
+    chatMessages.innerHTML += `<div class="user">You: ${userMsg}</div>`;
+
+    // Check FAQ first
+    let reply = null;
+    for (let key in faqs) {
+      if (userMsg.toLowerCase().includes(key)) {
+        reply = faqs[key];
+        break;
+      }
+    }
+
+    // If not in FAQs → use AI
+    if (!reply) {
+      reply = await getAIResponse(userMsg);
+    }
+
+    chatMessages.innerHTML += `<div class="bot">AI: ${reply}</div>`;
+    chatInput.value = "";
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  };
+// Enhanced Counter Animation
+document.addEventListener('DOMContentLoaded', function() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    const animateCounter = (element) => {
+        const target = parseInt(element.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const step = target / (duration / 16); // 60fps
+        let current = 0;
+        
+        element.classList.add('counting');
+        
+        const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+                element.classList.remove('counting');
+            }
+            element.textContent = Math.floor(current).toLocaleString();
+        }, 16);
+    };
+    
+    // Intersection Observer for triggering animation when in view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const statNumber = entry.target.querySelector('.stat-number');
+                if (statNumber && !statNumber.classList.contains('animated')) {
+                    statNumber.classList.add('animated');
+                    setTimeout(() => animateCounter(statNumber), 200);
+                }
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    document.querySelectorAll('.stat-item').forEach(item => {
+        observer.observe(item);
+    });
+});
