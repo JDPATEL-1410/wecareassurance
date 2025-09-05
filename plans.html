@@ -14,42 +14,27 @@
 
   <body>
    <!-- Navigation -->
-<nav class="navbar" id="navbar" role="navigation" aria-label="Main">
-  <div class="nav-container">
-    <div class="nav-logo">
-      <a href="index.html" aria-label="WE CARE ASSURANCE - Home">
-        <img src="assets/logo.png" alt="WE CARE ASSURANCE" class="logo" />
-      </a>
-    </div>
-
-    <!-- Mobile toggle -->
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="about.html" class="nav-link">About</a></li>
-
-      <!-- What we offer + quick links -->
-      <li class="nav-item-has-dropdown">
-        <a href="plans.html" class="nav-link">What we offer</a>
-        <button class="dropdown-toggle" aria-label="Open What we offer menu" aria-expanded="false"></button>
-        <div class="nav-dropdown" role="menu" aria-label="What we offer">
-          <a href="plans.html#pl" role="menuitem" class="nav-dd-link">Personal Line</a>
-          <a href="plans.html#cl" role="menuitem" class="nav-dd-link">Corporate Line</a>
-          <a href="plans.html#sb" role="menuitem" class="nav-dd-link">Surety Bonds</a>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html"
+            ><img src="assets/logo.png" alt="WE CARE ASSURANCE" class="logo"
+          /></a>
         </div>
-      </li>
-
-      <li><a href="claims.html" class="nav-link">Claims</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-
-      <!-- Optional CTA on desktop -->
-      <li class="nav-cta"><a href="plans.html#pl" class="btn-primary">Get Quote</a></li>
-    </ul>
-  </div>
-</nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="plans.html" class="nav-link">What we offer</a></li>
+          <li><a href="claims.html" class="nav-link">Claims</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
 
 
     <!-- Page Header -->
