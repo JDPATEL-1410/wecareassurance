@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WE CARE ASSURANCE - Insurance with Assurance</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html"
+            ><img src="assets/logo.png" alt="WE CARE ASSURANCE" class="logo"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link ">About</a></li>
+          <li><a href="plans.html" class="nav-link">What we offer</a></li>
+          <li><a href="claims.html" class="nav-link">Claims</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="highlight1" id="dynamicWord">Life</span>
+            <span id="insauranceText">Insurance with </span>
+            <span class="highlight">Assurance</span>
+          </h1>
+          <p class="hero-subtitle">
+            Protecting what matters most to you with trust, care, and unwavering
+            commitment
+          </p>
+          <div class="hero-buttons">
+            <a href="plans.html" class="btn-primary">Explore Plans</a>
+            <a href="about.html" class="btn-secondary">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Image Slider -->
+        <div class="hero-slider">
+          <div
+            id="heroImageCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-word="Life">
+                <img
+                  src="assets/356.jpg"
+                  alt="Insurance Protection"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item" data-word="Health">
+                <img
+                  src="assets/361.jpg"
+                  alt="Health Insurance"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item" data-word="Car">
+                <img
+                  src="assets/349.jpg"
+                  alt="Car Insurance"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item" data-word="Marine">
+                <img
+                  src="assets/353.jpg"
+                  alt="Marine Insurance"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item" data-word="Fire">
+                <img
+                  src="assets/359.jpg"
+                  alt="Fire Insurance"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item" data-word="Workmen's Compensation">
+                <img
+                  src="assets/357.jpg"
+                  alt="Labour Insurance"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item" data-word="Commercial Vehicle">
+                <img
+                  src="assets/350.jpg"
+                  alt="Commercial Vehicle Insurance"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item" data-word="Doctor">
+                <img
+                  src="assets/420.jpg"
+                  alt="Doctor Insurance"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item" data-word="Cyber">
+                <img
+                  src="assets/430.jpg"
+                  alt="Cyber Insurance"
+                  class="d-block w-100"
+                />
+              </div>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroImageCarousel"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
+            </div>
+            <!-- Carousel Controls -->
+            <button
+              class="carousel-control-prev visually-hidden"
+              type="button"
+              data-bs-target="#heroImageCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next visually-hidden"
+              type="button"
+              data-bs-target="#heroImageCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose WE CARE ASSURANCE?</h2>
+          <p class="section-subtitle">
+            Built on the foundation of Trust, Assurance, and Care
+          </p>
+        </div>
+        <div class="values-grid">
+          <div class="value-card" data-aos="fade-up">
+            <div class="value-icon">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2L3 7L12 12L21 7L12 2Z"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+                <path d="M3 17L12 22L21 17" stroke="#0057A4" stroke-width="2" />
+                <path d="M3 12L12 17L21 12" stroke="#0057A4" stroke-width="2" />
+              </svg>
+            </div>
+            <h3>Trust</h3>
+            <p>
+              Over 23 years of reliable service and transparent dealings with
+              our valued customers
+            </p>
+          </div>
+          <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="value-icon">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 22S2 16 2 10V5L12 2L22 5V10C22 16 12 22 12 22Z"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>Assurance</h3>
+            <p>Comprehensive coverage with guaranteed claims settlement</p>
+          </div>
+          <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="value-icon">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M20.84 4.61A5.5 5.5 0 0 0 16.5 2C13.76 2 12 3.64 12 3.64S10.24 2 7.5 2A5.5 5.5 0 0 0 3.16 4.61C2.42 7.55 3.14 12.22 12 21.5C20.86 12.22 21.58 7.55 20.84 4.61Z"
+                  stroke="#E74C3C"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>Care</h3>
+            <p>
+              Personal attention to every customer with dedicated support and
+              care at every step
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Value Card Overlay -->
+    <div id="valueCardOverlay" class="vc-overlay" aria-hidden="true">
+      <div class="vc-backdrop"></div>
+      <div
+        class="vc-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="vcTitle"
+      >
+        <button class="vc-close" aria-label="Close">×</button>
+        <div class="vc-content"></div>
+      </div>
+    </div>
+
+    <!-- Plans Section -->
+    <section class="plans-section" id="plans">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">We are offering...</h2>
+          <p class="section-subtitle">
+            Choose the perfect coverage for your needs
+          </p>
+        </div>
+        <div class="plans-grid">
+          <!-- Personal Line -->
+          <div class="plan-card" data-aos="fade-up">
+            <div class="plan-icon">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M20 21V19C20 16.79 18.21 15 16 15H8C5.79 15 4 16.79 4 19V21"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="12"
+                  cy="7"
+                  r="4"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>Personal Line</h3>
+            <p>
+              Protect yourself and your family with tailored personal insurance
+              solutions
+            </p>
+            <ul class="plan-features">
+              <li>✓ Health & Super Top-up Protection</li>
+              <li>✓ Life Insurance</li>
+              <li>✓ Travel & Personal Accident Insurance</li>
+            </ul>
+            <a href="plans.html#pl" class="plan-btn">Learn More</a>
+          </div>
+
+          <!-- Corporate Line -->
+          <div class="plan-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="plan-icon">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+                <path
+                  d="M8 14S9.5 16 12 16S16 14 16 14"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+                <line
+                  x1="9"
+                  y1="9"
+                  x2="9.01"
+                  y2="9"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+                <line
+                  x1="15"
+                  y1="9"
+                  x2="15.01"
+                  y2="9"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>Corporate Line</h3>
+            <p>
+              Comprehensive protection for businesses, employees, and corporate
+              assets
+            </p>
+            <ul class="plan-features">
+              <li>✓ Employee Health & Group Insurance</li>
+              <li>✓ Property & Liability Coverage</li>
+              <li>✓ Customized Corporate Solutions</li>
+            </ul>
+            <a href="plans.html#cl" class="plan-btn">Learn More</a>
+          </div>
+
+          <!-- Surety Bonds -->
+          <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="plan-icon">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <rect
+                  x="3"
+                  y="4"
+                  width="18"
+                  height="16"
+                  rx="2"
+                  ry="2"
+                  stroke="#0057A4"
+                  stroke-width="2"
+                />
+                <path d="M3 10H21" stroke="#0057A4" stroke-width="2" />
+              </svg>
+            </div>
+            <h3>Surety Bonds</h3>
+            <p>
+              Financial guarantees that secure performance, compliance, and
+              obligations.
+            </p>
+            <ul class="plan-features">
+              <li>✓ Contract Bonds</li>
+              <li>✓ Commercial Bonds</li>
+              <li>✓ Court & Customs Bonds</li>
+            </ul>
+            <a href="plans.html#sb" class="plan-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-aos="fade-up">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="8000">
+              0<span style="color: #e74c3c">+</span>
+            </div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="22">
+              0<span style="color: #e74c3c">+</span>
+            </div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M9,10H7V12H9V10M13,10H11V12H13V10M17,10H15V12H17V10M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="1000">
+              0<span style="color: #e74c3c">+</span>
+            </div>
+            <div class="stat-label">Claims Settled</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="8000">
+              0<span style="color: #e74c3c">+</span>
+            </div>
+            <div class="stat-label">Active Policies</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <h2>Ready to Get Protected?</h2>
+          <p>
+            Join thousands of satisfied customers who trust WE CARE ASSURANCE
+            for their insurance needs
+          </p>
+          <div class="cta-buttons">
+            <a href="plans.html" class="btn-primary">Get Quote Now</a>
+            <a href="contact.html" class="btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="assets/logo.png" alt="WE CARE ASSURANCE" />
+            </div>
+            <p>
+              Protecting what matters most to you with trust, care, and
+              unwavering commitment since 2003.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="5"
+                    ry="5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <circle cx="18" cy="6" r="1" fill="currentColor" />
+                </svg>
+              </a>
+
+              <a href="#" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M16 8A6 6 0 0 1 22 14V21H18V14A2 2 0 0 0 16 12A2 2 0 0 0 14 14V21H10V14A6 6 0 0 1 16 8Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <rect
+                    x="2"
+                    y="9"
+                    width="4"
+                    height="12"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="4"
+                    cy="4"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="plans.html">Insurance Plans</a></li>
+              <li><a href="claims.html">Claims</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Insurance Plans</h3>
+            <ul>
+              <li><a href="plans.html#pl">Personal Line</a></li>
+              <li><a href="plans.html#cl">Corporate Line</a></li>
+             
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <div class="contact-info">
+              <p>
+                <strong>Anand Branch:</strong><br />
+                F-4/5 City Plaza, Nr. Baliyadev Crossing, Nr. Sardargunj,
+                Anand-388001<br />
+                <strong>Phone:</strong> 98241 29366, 93772 77703
+              </p>
+              <p>
+                <strong>Vadodara Branch:</strong><br />
+                504, The Park, Akshar Chowk, Old Padra Road, Vadodara-390020
+              </p>
+              <p><strong>Email:</strong> info@wecareassurance.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 WE CARE ASSURANCE. All rights reserved. | Designed by
+            Aina Tech Services LLP.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  <!-- Back to Top Button -->
+<button id="backToTop" title="Go to top">↑</button>
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
